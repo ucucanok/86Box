@@ -63,3 +63,4 @@ patch_file src/unix/assets/*.spec 'changelog date' 's/(^[*]\s)[a-zA-Z]{3}\s[a-zA
 patch_file src/unix/assets/*.metainfo.xml release 's/(<release version=")[^"]+(" date=")[^"]+/\1'"$newversion"'\2'"$(date +%Y-%m-%d)"'/'
 patch_file debian/changelog 'changelog date' 's/>  .+/>  '"$(date -R)"'/'
 patch_file debian/changelog 'changelog version' 's/86box \(.+\)/86box \('"$newversion"'\)/'
+#ideally the installer should be patched here
