@@ -118,7 +118,7 @@ begin
   if CurPageID = wpReady then begin
     DownloadPage.Clear;
     // Use AddEx to specify a username and password
-    DownloadPage.Add('https://github.com/86Box/roms/archive/refs/tags/v5.0.zip', 'roms.zip', '');
+    DownloadPage.Add('https://github.com/86Box/roms/archive/refs/heads/master.zip', 'roms.zip', '');
     DownloadPage.Show;
     try
       try
